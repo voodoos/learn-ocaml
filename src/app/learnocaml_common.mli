@@ -123,7 +123,7 @@ val get_state_as_save_file : ?include_reports:bool -> unit -> Save.t
     and returns the merged save file. The save will be created on the server
     if it doesn't exist. [on_sync ()] is called when this is done.
 
-    Notice that this function synchonizes student {b,content} but not the 
+    Notice that this function synchronizes student {b,content} but not the 
     reports which are only synchronized when an actual "grading" is done.
     
 *)
