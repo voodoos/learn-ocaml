@@ -1,0 +1,5 @@
+{
+  "id": "ada",
+  "prelude": "",
+  "template": "(* Vous pouvez entrer du code ici et l'évaluer avec le bouton en bas *)\n\n(* Déclarer une variable *)\nlet n = 3;;\n\n(* Déclarer une fonction*)\nlet ma_fonction x = 2 * x;;\n\n(* Appeler une fonction : pas de parenthèse ! *)\nma_fonction 4;;\n\n(* La liste vide *)\n[];;\n\n(* Une liste avec 1 élément *)\n[1];;\n\n(* Une liste avec plusieurs élément *)\nlet l = [2;3;1];;\n\n(* Construire une liste avec `::` *)\nlet ma_liste = 2::3::1::[];;\n\n(* C'est bien la même chose *)\nl = ma_liste;; (* true *)\n\n(* Pattern matching sur les listes *)\nlet ma_fonction l =\n  match l with\n  | [] -> print_string \"La liste est vide\"\n  | x :: tl -> print_string \"La liste contient 1 élément et plus\"\n"
+}
